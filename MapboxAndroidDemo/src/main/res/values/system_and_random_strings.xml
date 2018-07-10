@@ -22,8 +22,15 @@
     <string name="description_query">Examples here show how to query the map data to obtain information such as a features geometry or properties.</string>
     <string name="description_offline">Don\'t forget that client-side static maps can be made with the "snapshotter". Click here for some examples.</string>
 
+    <!-- home screen widget card instructions -->
+    <string name="homescreen_geocode_widget">Have you enabled location tracking for this app via the location layer plugin example? If so, go to your device\'s home screen and look for this app\'s widget. Add it to your screen and you should see the address of your device's location appear, thanks to the Mapbox Geocoding service.</string>
+
     <!-- snapshotter -->
     <string name="loading_snapshot_image">Loading snapshot image</string>
+
+    <!-- home screen widget textview -->
+    <string name="title">Your location:</string>
+    <string name="widget_unknown_location">Unknown location</string>
 
     <!-- toolbar items -->
     <string name="info">Info</string>

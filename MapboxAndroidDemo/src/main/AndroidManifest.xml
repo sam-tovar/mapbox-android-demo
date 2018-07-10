@@ -610,6 +610,14 @@
                 android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
         </activity>
         <activity
+            android:name=".labs.HomeScreenWidgetActivity"
+            android:label="@string/activity_lab_home_screen_widget_title"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mapbox.mapboxandroiddemo.MainActivity" />
+        </activity>
+        <activity
             android:name=".account.LandingActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -632,6 +640,15 @@
             android:name=".account.LoadingActivity"
             android:screenOrientation="portrait" />
 
+        <receiver android:name=".utils.DemoAppHomeScreenAddressWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/demo_app_home_screen_widget_info" />
+        </receiver>
     </application>
 
 </manifest>
