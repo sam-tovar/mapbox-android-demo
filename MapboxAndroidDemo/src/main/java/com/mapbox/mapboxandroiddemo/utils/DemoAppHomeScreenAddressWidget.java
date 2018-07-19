@@ -85,7 +85,7 @@ public class DemoAppHomeScreenAddressWidget extends AppWidgetProvider implements
         permissionsManager.requestLocationPermissions(getActivity(context));
       }
     } catch (NullPointerException nullPointerException) {
-      Toast.makeText(context, nullPointerException.toString(), Toast.LENGTH_LONG).show();
+      Toast.makeText(context, context.getString(R.string.enable_location), Toast.LENGTH_LONG).show();
 
     }
 
