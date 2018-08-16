@@ -85,7 +85,7 @@ public class LocationOptionsActivity extends AppCompatActivity implements
           mapView, mapboxMap, locationEngine, locationLayerOptions);
 
       // Set the plugin's camera and render modes
-      locationLayerPlugin.setCameraMode(CameraMode.NONE);
+      locationLayerPlugin.setCameraMode(CameraMode.TRACKING);
       locationLayerPlugin.setRenderMode(RenderMode.NORMAL);
 
       // Add the location icon click listener
@@ -193,9 +193,6 @@ public class LocationOptionsActivity extends AppCompatActivity implements
 
   @Override
   public void onLocationChanged(Location location) {
-    mapboxMap.animateCamera(CameraUpdateFactory.newLatLngZoom(
-        new LatLng(location.getLatitude(), location.getLongitude()), 16));
-    locationEngine.removeLocationEngineListener(this);
   }
 }
 // #-end-code-snippet: location-plugin-options-activity full-java
