@@ -274,4 +274,9 @@
 
     <!-- Temperature change -->
     <string name="temp_change_feedback"> Showing min and max temperatures up to 2006 in %1$s</string>
+
+    <!--Custom location layer plugin icon-->
+    <string name="tap_the_icon">Tap the location icon!</string>
+    <string name="current_location">Lat: %1$d Long: %2$d\n%3$s</string>
+
 </resources>
